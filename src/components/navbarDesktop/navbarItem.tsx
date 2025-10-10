@@ -13,7 +13,7 @@ export default function NavbarItem({
   return (
     <li>
       <a
-        className={`text-gray-800 font-light px-3 py-1 rounded-md hover:bg-gray-200 transition-colors duration-300 ${
+        className={`text-gray-800 font-light px-4 py-2 rounded-md hover:bg-gray-200 transition-colors duration-300 ${
           isActive ? "bg-gray-900 text-white hover:bg-gray-800" : ""
         } ${className}`}
         href={href}

@@ -1,11 +1,13 @@
 import NavbarMobile from "@/components/navbarMobile/navbar";
 import NavbarDesktop from "@/components/navbarDesktop/navbar";
+import { MobileNavProvider } from "@/contexts/MobileNavContext";
 
 export default function App() {
   return (
-    <main className="relative bg-gradient-to-br from-blue-200 to-slate-50">
-      <NavbarMobile />
-      <NavbarDesktop />
+    <MobileNavProvider>
+      <main className="relative bg-gradient-to-br from-blue-200 to-slate-50">
+        <NavbarMobile />
+        <NavbarDesktop />
       <section id="home" className="min-h-screen pt-20 px-8">
         <h2 className="text-4xl font-bold mb-4">Home</h2>
         <p>Welcome to HabbitZone</p>
@@ -31,5 +33,6 @@ export default function App() {
         <p>Choose your plan</p>
       </section>
     </main>
+    </MobileNavProvider>
   );
 }
