@@ -16,7 +16,7 @@ export default function NavbarDesktop() {
           className="cursor-pointer"
         >
           Get Started
-          <ArrowRight size="32" color="#fff" />
+          <ArrowRight size={32} color="#fff" />
         </Button>
       </div>
     </nav>
